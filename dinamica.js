@@ -38,10 +38,8 @@ function inicioDoJogo(){
     let e_numeroValido = false
     while(!e_numeroValido){
         qtdCartasDigitadas = Number(prompt('Digite quantas cartas quer jogar (4,6,8,10,12,14):'));
-        if (qtdCartasDigitadas >= 4 && qtdCartasDigitadas <= 14){
+        if (qtdCartasDigitadas% 2 === 0 && qtdCartasDigitadas >= 4 && qtdCartasDigitadas <= 14){
             e_numeroValido = true
-        }else {
-            alert('Nº digitado invalido!');
         }
     }
 
